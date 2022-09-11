@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,600&family=Slabo+27px&family=Zilla+Slab:ital,wght@0,500;0,700;1,600&display=swap");
+/* scss stuff
+--------------------------------------------- */
+/* section nav
+--------------------------------------------- */
+.main.Gallery{
+  padding: 10pt;
+}
+
+/* section stuff
+--------------------------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+#gallery-featured .section-title {
+  text-align: center;
+  padding: 0 1em;
+  line-height: 0.9;
+  font-size: 50px;
+  letter-spacing: 1.3px;
+  font-weight: 500;
+  color: #4a4e69;
+  font-family: "Slabo 27px", serif;
+  line-height: 0.9;
+  font-size: 20px;
+  letter-spacing: 1.3px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.9s cubic-bezier(0.13, 0.38, 0.45, 0.94);
+}
+#gallery-featured .section-title:hover {
+  letter-spacing: 1.8px;
+  filter: blur(1px);
+}
+#gallery-featured .container__card-wrapper {
+  width: 93%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+#gallery-featured .container__card-wrapper .card {
+  background-color: rgba(255, 255, 255, 0.829);
+  height: 480px;
+  width: 100%;
+  border-radius: 2px;
+  max-width: 20em;
+  margin: 2em 0.7em;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11), 0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11), 0 8px 16px rgba(0, 0, 0, 0.11);
+  text-align: center;
+  position: relative;
+}
+#gallery-featured .container__card-wrapper .card:hover {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+}
+#gallery-featured .container__card-wrapper .card .img {
+  height: 370px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#gallery-featured .container__card-wrapper .card .img.a {
+  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/56613797-3ba9-471e-be14-141949d3ec5e/de5mxap-1937e2ca-ba4e-47f1-9f1a-673193fcf349.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvNTY2MTM3OTctM2JhOS00NzFlLWJlMTQtMTQxOTQ5ZDNlYzVlXC9kZTVteGFwLTE5MzdlMmNhLWJhNGUtNDdmMS05ZjFhLTY3MzE5M2ZjZjM0OS5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.TJtGCjxzuFvGIS6WbY9MFDPaAcZkVqbI-_wnnXAjUFA);
+  background-size: cover;
+}
+#gallery-featured .container__card-wrapper .card .img.b {
+  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/56613797-3ba9-471e-be14-141949d3ec5e/de5mxc7-9ab46ae7-2d17-4057-abda-11286e1fb307.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvNTY2MTM3OTctM2JhOS00NzFlLWJlMTQtMTQxOTQ5ZDNlYzVlXC9kZTVteGM3LTlhYjQ2YWU3LTJkMTctNDA1Ny1hYmRhLTExMjg2ZTFmYjMwNy5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.F-eBNDZpMKE633UUA8CQs_PvVEEn9IExU5HCw_4HTWs);
+  background-size: cover;
+}
+#gallery-featured .container__card-wrapper .card .img.c {
+  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/56613797-3ba9-471e-be14-141949d3ec5e/de5mxdx-4ff65579-1ac7-4247-9bf8-489e76a65146.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvNTY2MTM3OTctM2JhOS00NzFlLWJlMTQtMTQxOTQ5ZDNlYzVlXC9kZTVteGR4LTRmZjY1NTc5LTFhYzctNDI0Ny05YmY4LTQ4OWU3NmE2NTE0Ni5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.r8VM3f87snHaI-B4MHBEhd-F1CCVr69SVOkzao5bG-8);
+  background-size: cover;
+}
+#gallery-featured .container__card-wrapper .card .img.d {
+  background-image: url(https://res.cloudinary.com/dsx500kcj/image/upload/v1602520562/blossom-001/purple-hydrangea_white-rose_snowberry_Symphoricarpos-albus-001_gpj3uc.png);
+  background-size: cover;
+}
+#gallery-featured .container__card-wrapper .card .img.e {
+  background-image: url(https://res.cloudinary.com/dsx500kcj/image/upload/v1602520562/blossom-001/roses_hypericum_white_bouquet_001_a9celz.png);
+  background-size: cover;
+}
+#gallery-featured .container__card-wrapper .card .img.f {
+  background-image: url(https://res.cloudinary.com/dsx500kcj/image/upload/v1602520562/blossom-001/pink_roses_hypericum_mix_flower_arrangement-003_qswqj4.png);
+  background-size: cover;
+}
+#gallery-featured .container__card-wrapper .card .info {
+  top: 0;
+  left: 0;
+  text-align: center;
+  margin: 100px 0 0 0;
+  width: 100%;
+  z-index: 10;
+}
+#gallery-featured .container__card-wrapper .card .info h3 {
+  line-height: 0.9;
+  font-size: 50px;
+  letter-spacing: 1.3px;
+  font-weight: 500;
+  color: #4a4e69;
+  font-family: "Slabo 27px", serif;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  top: 10px;
+  left: 15px;
+}
+#gallery-featured .container__card-wrapper .card .info small {
+  line-height: 0.9;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 1.3px;
+  font-weight: 500;
+  color: #f0efeb;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  top: 60px;
+  left: 17px;
+}
+#gallery-featured .container__card-wrapper .card .info p {
+  line-height: 1;
+  font-size: 16px;
+  letter-spacing: 1.3px;
+  font-weight: 500;
+  color: #555b6e;
+  font-family: "Zilla Slab", serif;
+  font-weight: bold;
+  position: absolute;
+  bottom: 42px;
+  left: 17px;
+  padding: 0 1em;
+  z-index: 20;
+}
+
+#gallery-featured .container__card-wrapper .card .info .count {
+  color: #EF476F;
+  line-height: 0.9;
+  text-transform: uppercase;
+  font-size: 8px;
+  letter-spacing: 0.8px;
+  font-weight: 500;
+  position: absolute;
+  top: 450px;
+  left: 51px;
+  z-index: 77;
+}
+#gallery-featured .container__card-wrapper .card .info .btn {
+  line-height: 0.9;
+  letter-spacing: 0.1em;
+  font-family: "Zilla Slab", serif;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  color: #309c40;
+  position: absolute;
+  margin: 0;
+  bottom: 20px;
+  background-size: 200% auto;
+  right: 17px;
+  z-index: 33;
+  padding: 0.6em 2em;
+  border-radius: 16px;
+  transition: 0.9s cubic-bezier(0.13, 0.38, 0.45, 0.94);
+  background-image: linear-gradient(#444, #333);
+  text-align: center;
+  color: #ededed;
+  margin: 0 1px;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  border-left: 1px solid rgba(255, 255, 255, 0.05);
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.175s ease;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+}
+#gallery-featured .container__card-wrapper .card .info .btn:hover {
+  background-position: right center;
+  color: #b3b3b3;
+  text-decoration: none;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11), 0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11), 0 8px 16px rgba(0, 0, 0, 0.11);
+}
+/*  */
+#gallery-featured .container__card-wrapper .card .gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(121, 209, 202, 0.329);
+  background: linear-gradient(to bottom, rgba(254, 252, 234, 0.03) 40%, rgba(252, 250, 235, 0.03) 9%, #efefef 100%);
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+}
+#gallery-featured .container__card-wrapper .card .cardlayer-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #e0f5e3;
+  background: linear-gradient(180deg, #FFFFFF 0%, #D3E0FF 100%);
+  background-image: -webkit-linear-gradient(top, #f4f1ee, #fff);
+  background-image: linear-gradient(top, #f4f1ee, #fff);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.3), inset 0px 2px 1px 1px white, inset 0px -1px 1px 1px rgba(204, 198, 197, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  z-index: 20;
+  transition: 0.9s cubic-bezier(0.13, 0.38, 0.45, 0.94);
+}
+#gallery-featured .container__card-wrapper .card .cardlayer-overlay__content {
+  padding: 2em;
+}
+#gallery-featured .container__card-wrapper .card .cardlayer-overlay__content h3 {
+  line-height: 0.9;
+  font-size: 50px;
+  letter-spacing: 1.3px;
+  font-weight: 500;
+  color: #4a4e69;
+  font-family: "Slabo 27px", serif;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 30px;
+  text-shadow: 0px -1px 1px #bdb5b4, 1px 1px 1px white;
+}
+#gallery-featured .container__card-wrapper .card .cardlayer-overlay__content hr {
+  width: 70px;
+  height: 3px;
+  margin: 3px auto;
+  border: 0;
+  background: #f0efeb;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 150px;
+}
+#gallery-featured .container__card-wrapper .card .cardlayer-overlay__content p {
+  line-height: 1;
+  font-size: 16px;
+  letter-spacing: 1.3px;
+  font-weight: 500;
+  color: #555b6e;
+  font-family: "Zilla Slab", serif;
+  position: absolute;
+  padding: 0 1em;
+  margin: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 90px;
+}
+#gallery-featured .container__card-wrapper .card-overlay {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+}
+#gallery-featured .container__card-wrapper .card-overlay:hover .cardlayer-overlay {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: 0.9s cubic-bezier(0.13, 0.38, 0.45, 0.94);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
