@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/Content_Page.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <nav>
+    <div class="navbar">
+      <a style="align-items: left; "><img src="logo.png" style="height: 80pt; width: 200pt; " /></a>
+      <!-- <div class="logo"><a href="#">chandigarh University</a></div> -->
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#On-Going">On Going Events </a></li>
+        <li><a href="index.html#Up-Coming">Up-Coming </a></li>
+        <li><a href="index.html#Gallery">Gallery </a></li>
+        <li><a href="index.html#Contact_Us">Contact Us</a></li>
+      </ul>
+      <div class="appearance">
+        
+        <div class="toggle-switch">
+            <span class="switch"></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="home-content">
+    <div class="texts">
+      <h2 class="text">Name of the Event/Activity/Competition </h2>
+      <h3 class="text">... <span>Organizer.</span></h3>
+      <p>Details including poster</p>
+      <div class="button">
+      <a href="Form.html">Register
+      <i class="fas fa-location-arrow"></i></a>
+    </div>
+  </section>
+
+  <script>
+    const body = document.querySelector('body'),
+        sidebar = body.querySelector('nav'),
+        toggle = body.querySelector(".toggle"),
+        searchBtn = body.querySelector(".search-box"),
+        modeSwitch = body.querySelector(".toggle-switch"),
+        modeText = body.querySelector(".mode-text");
+
+
+    toggle.addEventListener("click", () => {
+        sidebar.classList.toggle("close");
+    })
+
+    searchBtn.addEventListener("click", () => {
+        sidebar.classList.remove("close");
+    })
+
+    modeSwitch.addEventListener("click", () => {
+        body.classList.toggle("dark");
+
+        if (body.classList.contains("dark")) {
+            modeText.innerText = "Light mode";
+        } else {
+            modeText.innerText = "Dark mode";
+
+        }
+    });
+</script>
+</body>
+</html>
+

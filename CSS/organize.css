@@ -1,0 +1,60 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+/* body {
+  background-color: #f3f3f3;
+} */
+.main.Organize{
+  padding: 10pt;
+}
+.u-center-v {
+  position: auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.tabs {
+  width: 100%;
+  text-align: center;
+}
+.tabs__tab {
+  display: inline-block;
+  width: 140px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: white;
+  box-shadow: inset 10px 0;
+  transition: box-shadow 200ms ease-out;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  margin-right: 10px;
+}
+.tabs__tab:last-of-type {
+  margin-right: 0;
+}
+.tabs__tab--active, .tabs__tab:hover {
+  box-shadow: inset 140px 0;
+}
+.tabs__tab-inner {
+  color: #222;
+  transition: color 200ms ease-out;
+}
+.tabs__tab:hover .tabs__tab-inner {
+  color: white;
+}
+.tabs__tab--home {
+  color: deepskyblue;
+}
+.tabs__tab--blog {
+  color: deeppink;
+}
+.tabs__tab--about {
+  color: lightseagreen;
+}
+.tabs__tab--contact {
+  color: rebeccapurple;
+}
+
